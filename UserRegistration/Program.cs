@@ -6,17 +6,17 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter LastName");
-            var LastName=Console.ReadLine();
-            var pattern = "^[A-Z]{1}[a-z]{2,}$";
+            Console.WriteLine("Enter Email");
+            var Email=Console.ReadLine();
+            var pattern = "^[0-9A-Za-z]+([.][0-9A-Za-z]+)[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";
             Regex regex= new Regex(pattern);
-            if( regex.IsMatch(LastName))
+            if( regex.IsMatch(Email))
             {
-                Console.WriteLine(LastName + " Valid Lastname ");
+                Console.WriteLine(Email + " Valid Email id");
             }
             else
             {
-                Console.WriteLine(LastName + " Invalid Lastname");               
+                Console.WriteLine(Email + " Invalid Email id");               
             }
         }
     }
