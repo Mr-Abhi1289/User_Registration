@@ -6,20 +6,18 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter First Name");
-            var FirstName=Console.ReadLine();
+            Console.WriteLine("Enter LastName");
+            var LastName=Console.ReadLine();
             var pattern = "^[A-Z]{1}[a-z]{2,}$";
             Regex regex= new Regex(pattern);
-            if( regex.IsMatch(FirstName))
+            if( regex.IsMatch(LastName))
             {
-                Console.WriteLine(FirstName + " Valid Firstname ");
+                Console.WriteLine(LastName + " Valid Lastname ");
             }
             else
             {
-                Console.WriteLine(FirstName + " Invalid Firstname");
-                
+                Console.WriteLine(LastName + " Invalid Lastname");               
             }
-
         }
     }
 }
