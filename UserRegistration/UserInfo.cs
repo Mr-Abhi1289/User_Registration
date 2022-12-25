@@ -10,9 +10,19 @@ namespace UserRegistration
     public class UserInfo
     {
         public static string FIRSTNAME = "^[A-Z]{1}[a-z]{2,}$";
-        public bool validateFirstName(string Fname)
+        public static string LASTNAME = "^[A-Z]{1}[a-z]{2,}";
+
+        public bool validateFirstName(string firstname)
         {
-            return Regex.IsMatch(Fname, FIRSTNAME);
+            return Regex.IsMatch(firstname, FIRSTNAME);
+
         }
+        public bool validateLastName(string lastName) 
+        {
+            return Regex.IsMatch(lastName,LASTNAME);
+
+        }
+
+
     }
 }
