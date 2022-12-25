@@ -9,8 +9,9 @@ namespace UserRegistration
 {
     public class UserInfo
     {
-        public static string FIRSTNAME = "^[A-Z]{1}[a-z]{2,}$";
-        public static string LASTNAME = "^[A-Z]{1}[a-z]{2,}";
+        public string FIRSTNAME = "^[A-Z]{1}[a-z]{2,}$";
+        public string LASTNAME = "^[A-Z]{1}[a-z]{2,}";
+        public string MAILID= "^[0-9A-Za-z]+([.][0-9A-Za-z]+)[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";
 
         public bool validateFirstName(string firstname)
         {
@@ -23,6 +24,9 @@ namespace UserRegistration
 
         }
 
-
+        public bool validatemailid(string mailid)
+        {
+            return Regex.IsMatch(mailid, MAILID);
+        }
     }
 }

@@ -13,6 +13,9 @@
             string Lastname = Console.ReadLine();
             Console.WriteLine(user.validateFirstName(Lastname));
 
+            Console.WriteLine("Enter your mail-id");
+            var mailid= Console.ReadLine();
+            Console.WriteLine(user.validateFirstName(mailid));
 
         }
     }
