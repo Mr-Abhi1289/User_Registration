@@ -11,7 +11,7 @@
 
             Console.WriteLine("Enter last name");
             string Lastname = Console.ReadLine();
-            Console.WriteLine(user.validateFirstName(Lastname));
+            Console.WriteLine(user.validateLastName(Lastname));
 
 
         }
