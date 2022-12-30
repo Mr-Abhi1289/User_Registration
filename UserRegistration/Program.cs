@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             UserInfo user = new UserInfo();
+
             Console.WriteLine("Enter first Name");
             string firstname = Console.ReadLine();
             Console.WriteLine(user.validateFirstName(firstname));
@@ -14,8 +15,14 @@
             Console.WriteLine(user.validateFirstName(Lastname));
 
             Console.WriteLine("Enter your mail-id");
-            var mailid= Console.ReadLine();
+            string mailid= Console.ReadLine();
             Console.WriteLine(user.validatemailid(mailid));
+
+            Console.WriteLine("Enter your phonenumber");
+            string phonenumber = Console.ReadLine();
+            Console.WriteLine(user.validatephonenumber(phonenumber));
+
+
 
         }
     }
