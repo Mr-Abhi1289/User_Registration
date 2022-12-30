@@ -26,11 +26,6 @@
             string password1 = Convert.ToString(Console.ReadLine());
             Console.WriteLine(user.validatepassword1(password1));
 
-
-
-
-
-
         }
     }
 }
