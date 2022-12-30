@@ -22,7 +22,7 @@
             string phonenumber = Console.ReadLine();
             Console.WriteLine(user.validatephonenumber(phonenumber));
 
-            Console.WriteLine("Enter  Password with minimum 8 characters ");
+            Console.WriteLine("Enter Password with min 8 characters ,Atleast 1 UpperCase, 1 NumericValue");
             string password1 = Convert.ToString(Console.ReadLine());
             Console.WriteLine(user.validatepassword1(password1));
 
