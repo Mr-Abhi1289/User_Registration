@@ -22,6 +22,13 @@
             string phonenumber = Console.ReadLine();
             Console.WriteLine(user.validatephonenumber(phonenumber));
 
+            Console.WriteLine("Enter  Password with minimum 8 characters ");
+            string password1 = Convert.ToString(Console.ReadLine());
+            Console.WriteLine(user.validatepassword1(password1));
+
+
+
+
 
 
         }
