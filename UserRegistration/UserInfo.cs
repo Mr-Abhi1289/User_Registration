@@ -11,7 +11,7 @@ namespace UserRegistration
     {
         public string FIRSTNAME = "^[A-Z]{1}[a-z]{2,}$";
         public string LASTNAME = "^[A-Z]{1}[a-z]{2,}";
-        public string MAILID= "^[0-9A-Za-z]+([.][0-9A-Za-z]+)[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";
+        public string MAILID= "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$";
         public string PHONENUMBER= "^[+][0-9]{1,3}[ ][6-9]{1}[0-9]{9}$";
         public static string PASSRULE1 = "^(?=.*[A-Z])(?=.*\\d)(?=[\\w]*[\\W][\\w]*$)[\\S]{8,}$";
 
